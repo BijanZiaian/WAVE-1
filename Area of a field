@@ -1,0 +1,8 @@
+length = int(input("What is the length of the field in feet: "))
+width = int(input("What is the width of your field in feet: "))
+
+area_in_feet = length * width 
+area_in_acres = area_in_feet / 43560
+area_in_acres = str(area_in_acres)
+
+print("The area of the field in acres is " + area_in_acres)
