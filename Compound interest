@@ -1,0 +1,18 @@
+account_amount = float(input("Enter amount diposited into the acount in dollars: "))
+
+account_amount = account_amount + account_amount * 0.04
+account_amount = str(round(account_amount, 2))
+
+print("The value of your account in dollars after one year is " + account_amount)
+account_amount = float(account_amount)
+
+account_amount = account_amount + account_amount * 0.04
+account_amount = str(round(account_amount, 2))
+
+print("The value of your account in dollars after two years is " + account_amount)
+account_amount = float(account_amount)
+
+account_amount = account_amount + account_amount * 0.04
+account_amount = str(round(account_amount, 2))
+
+print("The value of your account in dollars after three years is " + account_amount)
