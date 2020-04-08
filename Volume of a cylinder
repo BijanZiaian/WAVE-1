@@ -1,0 +1,9 @@
+import math
+
+radius = int(input("What is the radius of the circular base in cm: "))
+height = int(input("What is the hight of the cylinder in cm: "))
+
+area_of_cylinder = math.pi * radius * radius * height
+area_of_cylinder = str(round(area_of_cylinder, 1))
+
+print("The Volume of your cylinder in cm is " + area_of_cylinder)
