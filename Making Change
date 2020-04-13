@@ -1,4 +1,4 @@
-cents = int(input("How many cents are left over: "))
+cents = int(input("How many cents are left over?: "))
 
 toonies = cents / 200
 toonies = int(toonies)
