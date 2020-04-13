@@ -1,0 +1,37 @@
+cents = int(input("How many cents are left over: "))
+
+toonies = cents / 200
+toonies = int(toonies)
+toonies_cents = toonies * 200
+cents = cents - toonies_cents
+
+loonies = cents / 100
+loonies = int(loonies)
+loonies_cents = loonies * 100
+cents = cents - loonies_cents
+
+quarters = cents / 25
+quarters = int(quarters)
+quarters_cents = quarters * 25
+cents = cents - quarters_cents
+
+dimes = cents / 10
+dimes = int(dimes)
+dimes_cents = dimes * 10
+cents = cents - dimes_cents
+
+nickels = cents / 5
+nickels = int(nickels)
+nickels_cents = nickels * 5
+cents = cents - nickels_cents
+
+pennies = cents 
+cents = cents - pennies
+
+print("Your change is...")
+print(toonies, "toonies")
+print(loonies, "loonies")
+print(quarters, "quarters")
+print(dimes, "dimes")
+print(nickels, "nickels")
+print(pennies, "pennies")
