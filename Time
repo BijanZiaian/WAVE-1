@@ -1,0 +1,51 @@
+#Time
+
+#Units of Time
+
+days = int(input("How many days?: "))
+hours = int(input("How many hours?: "))
+minutes = int(input("How many minutes?: "))
+seconds = int(input("How many seconds?: "))
+
+total_seconds = days * 86400
+total_seconds = total_seconds + hours * 3600
+total_seconds = total_seconds + minutes * 60
+total_seconds = total_seconds + seconds 
+
+print("The total time in seconds is", total_seconds)
+
+
+
+#Units of Time(Again)
+
+total_seconds = int(input("How many seconds?: "))
+
+days = total_seconds / 86400
+days = int(days)
+days_seconds = days * 86400
+total_seconds = total_seconds - days_seconds
+
+hours = total_seconds / 3600
+hours = int(hours)
+hours_seconds = hours * 3600
+total_seconds = total_seconds - hours_seconds
+
+minutes = total_seconds / 60
+minutes = int(minutes)
+minutes_seconds = minutes * 60
+total_seconds = total_seconds - minutes_seconds
+
+seconds = total_seconds 
+
+print(F"{days}:" f"{hours:02d}" ":" f"{minutes:02d}" ":" f"{seconds:02d}")
+
+
+
+#Current Time
+
+import datetime
+
+now = datetime.datetime.now()
+
+print ("Current date and time : ")
+print (now.strftime("%Y-%m-%d %H:%M:%S"))
